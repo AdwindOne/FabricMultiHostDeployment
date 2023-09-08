@@ -1,0 +1,17 @@
+version: "2.1"
+
+networks:
+  test:
+
+services:
+  api:
+    image: api:1.0
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+    build: .
+    networks:
+      - test
+    ports:
+      - 4000:4000
