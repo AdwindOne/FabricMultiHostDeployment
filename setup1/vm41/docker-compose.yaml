@@ -26,7 +26,7 @@ services:
   #     - test
 
   couchdb6:
-    container_name: couchdb4
+    container_name: couchdb6
     image: hyperledger/fabric-couchdb
     logging:
       options:
@@ -41,7 +41,7 @@ services:
       - test
 
   couchdb7:
-    container_name: couchdb5
+    container_name: couchdb7
     image: hyperledger/fabric-couchdb
     logging:
       options:
